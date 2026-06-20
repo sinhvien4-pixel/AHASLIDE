@@ -39,17 +39,17 @@ export default function CommunityModal({ open, onClose }: CommunityModalProps) {
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10" style={{ background: "radial-gradient(circle, #FF5CA8, transparent)", transform: "translate(30%, -30%)" }} />
               <button onClick={handleClose} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"><X size={14} /></button>
               <div className="w-10 h-10 rounded-2xl bg-[rgba(255,92,168,0.2)] flex items-center justify-center mb-4"><Users size={18} className="text-[#FF5CA8]" /></div>
-              <h2 className="text-xl font-bold text-white mb-1">Join the Discussion</h2>
-              <p className="text-white/50 text-sm">Connect with 2,400+ HR and L&D professionals measuring engagement.</p>
+              <h2 className="text-xl font-bold text-white mb-1">Tham gia Thảo luận</h2>
+              <p className="text-white/50 text-sm">Kết nối với 2.400+ HR và L&D professionals đang đo lường Engagement.</p>
             </div>
 
             <div className="px-8 py-7">
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {[
-                    { key: "name", label: "Full Name", type: "text", placeholder: "Your name", required: true },
-                    { key: "email", label: "Email", type: "email", placeholder: "you@company.com", required: true },
-                    { key: "company", label: "Company", type: "text", placeholder: "Your company", required: false },
+                    { key: "name", label: "Họ và tên", type: "text", placeholder: "Họ và tên", required: true },
+                    { key: "email", label: "Email", type: "email", placeholder: "ban@congty.com", required: true },
+                    { key: "company", label: "Doanh nghiệp", type: "text", placeholder: "Tên doanh nghiệp", required: false },
                   ].map(({ key, label, type, placeholder, required }) => (
                     <div key={key}>
                       <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">{label}{required && " *"}</label>
@@ -57,27 +57,27 @@ export default function CommunityModal({ open, onClose }: CommunityModalProps) {
                     </div>
                   ))}
                   <div>
-                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Primary Focus</label>
+                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Mục tiêu chính</label>
                     <select value={form.focus} onChange={(e) => setForm({ ...form, focus: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white">
-                      <option value="">What brings you here?</option>
-                      <option>Measuring training ROI</option>
-                      <option>Improving engagement rates</option>
-                      <option>Building L&D business case</option>
-                      <option>Benchmark against industry</option>
-                      <option>General learning</option>
+                      <option value="">Mục tiêu của bạn là gì?</option>
+                      <option>Đo lường ROI đào tạo</option>
+                      <option>Cải thiện tỷ lệ Engagement</option>
+                      <option>Xây dựng luận cứ kinh doanh cho L&D</option>
+                      <option>So sánh với chuẩn mực ngành</option>
+                      <option>Học hỏi chung</option>
                     </select>
                   </div>
                   <button type="submit" disabled={!isValid || loading} className="w-full flex items-center justify-center gap-2 bg-[#FF5CA8] text-white py-3.5 rounded-xl font-semibold text-sm disabled:opacity-50 hover:bg-[#FF8BC2] transition-all shadow-[0_4px_20px_rgba(255,92,168,0.35)] mt-1">
-                    {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <><Users size={15} /> Join Community — Free</>}
+                    {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <><Users size={15} /> Tham gia Cộng đồng — Miễn phí</>}
                   </button>
-                  <p className="text-center text-xs text-[#9CA3AF]">Free forever · No spam · Leave anytime</p>
+                  <p className="text-center text-xs text-[#9CA3AF]">Miễn phí mãi mãi · Không spam · Rời bất cứ lúc nào</p>
                 </form>
               ) : (
                 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-8">
                   <div className="w-16 h-16 rounded-full bg-[#FCE7F3] flex items-center justify-center mx-auto mb-4"><CheckCircle2 size={32} className="text-[#FF5CA8]" /></div>
-                  <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">Welcome to the Community!</h3>
-                  <p className="text-[#6B7280] text-sm mb-4">You&apos;ve joined 2,400+ HR and L&D professionals. Check your email for an invitation link.</p>
-                  <button onClick={handleClose} className="text-sm font-semibold text-[#FF5CA8] hover:underline">Start Exploring →</button>
+                  <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">Chào mừng đến Cộng đồng!</h3>
+                  <p className="text-[#6B7280] text-sm mb-4">Bạn đã tham gia cùng 2.400+ HR và L&D professionals. Kiểm tra email để nhận liên kết mời.</p>
+                  <button onClick={handleClose} className="text-sm font-semibold text-[#FF5CA8] hover:underline">Bắt đầu khám phá ���</button>
                 </motion.div>
               )}
             </div>

@@ -20,8 +20,8 @@ export default function Footer({ onContact }: FooterProps) {
               <span className="font-semibold text-white text-lg">AhaSlides</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-4 max-w-xs">
-              Transform engagement from assumptions into evidence. The platform
-              built for HR and L&D leaders who demand data.
+              Chuyển hóa Engagement từ phỏng đoán thành bằng chứng. Nền tảng được xây dựng
+              dành riêng cho HR và L&D Leaders cần dữ liệu.
             </p>
             <div className="flex items-center gap-3">
               <a href="#" className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-white/40 hover:bg-white/10 hover:text-white transition-all">
@@ -41,9 +41,9 @@ export default function Footer({ onContact }: FooterProps) {
 
           {/* Links */}
           <div>
-            <p className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Campaign</p>
+            <p className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Chiến dịch</p>
             <ul className="space-y-2.5">
-              {["Evidence Hub", "Methodology", "ROI Demo Room", "Expert Panel", "Case Studies", "Downloads"].map((link) => (
+              {["Thư viện Dữ liệu", "Phương pháp", "ROI Demo Room", "Chuyên gia Xác nhận", "Tình huống thực tế", "Tải xuống"].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-white/40 text-sm hover:text-white transition-colors">{link}</a>
                 </li>
@@ -54,7 +54,7 @@ export default function Footer({ onContact }: FooterProps) {
           <div>
             <p className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">AhaSlides</p>
             <ul className="space-y-2.5">
-              {["Product Features", "Pricing", "Enterprise", "Integrations", "API", "Support"].map((link) => (
+              {["Tính năng Sản phẩm", "Bảng giá", "Doanh nghiệp lớn", "Tích hợp", "API", "Hỗ trợ"].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-white/40 text-sm hover:text-white transition-colors">{link}</a>
                 </li>
@@ -66,10 +66,10 @@ export default function Footer({ onContact }: FooterProps) {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/5">
           <p className="text-white/25 text-xs">
-            © 2024 AhaSlides. Campaign: Bật AHA, Ra Số Liệu · Phase 2: PROVE IT
+            © 2024 AhaSlides. Chiến dịch: Bật AHA, Ra Số Liệu · Giai đoạn 2: CHỨNG MINH
           </p>
           <div className="flex items-center gap-6">
-            {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((link) => (
+            {["Chính sách Bảo mật", "Điều khoản Dịch vụ", "Chính sách Cookie"].map((link) => (
               <a key={link} href="#" className="text-white/25 text-xs hover:text-white/50 transition-colors">
                 {link}
               </a>

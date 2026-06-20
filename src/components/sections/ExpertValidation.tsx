@@ -13,7 +13,7 @@ const experts = [
     avatar: "SC",
     avatarColor: "from-[#FF5CA8] to-[#FF8BC2]",
     quote:
-      "We spent years measuring headcount in training rooms. When we finally started measuring engagement quality, we discovered our most-attended sessions had our lowest knowledge transfer rates. The data changed everything.",
+      "Chúng tôi mất nhiều năm đo số người trong phòng đào tạo. Khi cuối cùng bắt đầu đo chất lượng Engagement, chúng tôi phát hiện ra các buổi đông người nhất lại có tỷ lệ truyền đạt kiến thức thấp nhất. Dữ liệu đó thay đổi tất cả.",
     stat: "↑ 340% ROI",
   },
   {
@@ -24,38 +24,38 @@ const experts = [
     avatar: "MR",
     avatarColor: "from-[#6B7280] to-[#9CA3AF]",
     quote:
-      "The industry is shifting from 'did they attend?' to 'did they learn?' Organizations that make this transition first will have a significant competitive advantage in talent development.",
-    stat: "↑ 52% Retention",
+      "Ngành đang chuyển dịch từ 'họ có đến không?' sang 'họ có học được không?' Những tổ chức thực hiện chuyển đổi này trước sẽ có lợi thế cạnh tranh đáng kể trong phát triển nhân tài.",
+    stat: "↑ 52% Lưu giữ KT",
   },
   {
-    name: "Dr. Linh Nguyen",
-    role: "Training Consultant & Author",
+    name: "TS. Linh Nguyễn",
+    role: "Chuyên gia Đào tạo & Tác giả",
     company: "L&D Insight Asia",
-    category: "Training Consultant",
+    category: "Chuyên gia Đào tạo",
     avatar: "LN",
     avatarColor: "from-[#FF8BC2] to-[#FF5CA8]",
     quote:
-      "Every organization I work with has a spreadsheet showing 90%+ attendance rates — and every single one is surprised when we show them that actual engagement is half that number. The gap is universal.",
-    stat: "8 Years Research",
+      "Mọi tổ chức tôi làm việc cùng đều có bảng tính hiển thị tỷ lệ điểm danh trên 90% — và tất cả đều ngạc nhiên khi chúng tôi cho thấy Engagement thực tế chỉ bằng một nửa con số đó. Khoảng cách này là phổ biến.",
+    stat: "8 Năm Nghiên cứu",
   },
   {
     name: "James Okonkwo",
-    role: "CHRO & Keynote Speaker",
+    role: "CHRO & Diễn giả",
     company: "HR Asia Conference",
-    category: "Conference Speaker",
+    category: "Diễn giả",
     avatar: "JO",
     avatarColor: "from-[#1F1F1F] to-[#4B5563]",
     quote:
-      "Attendance metrics are organizational theater. Real L&D leaders stopped measuring who showed up and started measuring who actually grew. That distinction is the difference between cost centers and value creators.",
-    stat: "50+ Conferences",
+      "Số liệu điểm danh là diễn kịch của tổ chức. Những L&D Leader thực sự đã ngừng đo ai đến và bắt đầu đo ai thực sự phát triển. Sự khác biệt đó là ranh giới giữa trung tâm chi phí và người tạo ra giá trị.",
+    stat: "50+ Hội nghị",
   },
 ];
 
 const categoryColors: Record<string, string> = {
   "HR Leader": "bg-[#FCE7F3] text-[#FF5CA8]",
   "L&D Manager": "bg-blue-50 text-blue-600",
-  "Training Consultant": "bg-purple-50 text-purple-600",
-  "Conference Speaker": "bg-[#1F1F1F] text-white",
+  "Chuyên gia Đào tạo": "bg-purple-50 text-purple-600",
+  "Diễn giả": "bg-[#1F1F1F] text-white",
 };
 
 const fadeUp = {
@@ -82,15 +82,15 @@ export default function ExpertValidation() {
           className="max-w-2xl mb-16"
         >
           <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Section 06 — Expert Validation
+            Phần 06 — Chuyên gia xác nhận
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            The Industry Is Already Moving{" "}
-            <span className="text-gradient">Beyond Attendance</span>
+            Ngành đang chuyển dịch{" "}
+            <span className="text-gradient">vượt ra ngoài điểm danh</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Thought leaders across HR, L&D, and organizational development
-            are unified on one point: presence metrics are no longer enough.
+            Các chuyên gia dẫn đầu trong HR, L&D và phát triển tổ chức đều
+            thống nhất một điểm: số liệu hiện diện không còn đủ nữa.
           </p>
         </motion.div>
 
@@ -148,12 +148,12 @@ export default function ExpertValidation() {
               <div className="mt-6 pt-4 border-t border-[rgba(255,92,168,0.08)] flex items-center gap-3">
                 <button className="flex items-center gap-1.5 text-xs text-[#6B7280] hover:text-[#FF5CA8] transition-colors">
                   <Link2 size={12} />
-                  Connect
+                  Kết nối
                 </button>
                 <span className="text-[#6B7280]/30">·</span>
                 <button className="flex items-center gap-1.5 text-xs text-[#6B7280] hover:text-[#FF5CA8] transition-colors">
                   <Globe size={12} />
-                  Profile
+                  Hồ sơ
                 </button>
               </div>
             </motion.div>
@@ -168,10 +168,10 @@ export default function ExpertValidation() {
           className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-px bg-[rgba(255,92,168,0.1)] rounded-2xl overflow-hidden"
         >
           {[
-            { value: "200+", label: "Industry Experts" },
-            { value: "50+", label: "Countries Represented" },
-            { value: "1M+", label: "Employees Impacted" },
-            { value: "$4.2B", label: "Training Budget Optimized" },
+            { value: "200+", label: "Chuyên gia Ngành" },
+            { value: "50+", label: "Quốc gia" },
+            { value: "1M+", label: "Nhân viên được tác động" },
+            { value: "$4.2B", label: "Ngân sách Đào tạo Tối ưu" },
           ].map((item) => (
             <div key={item.label} className="bg-white px-8 py-6 text-center">
               <p className="text-3xl font-bold text-gradient mb-1">{item.value}</p>

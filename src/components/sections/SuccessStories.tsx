@@ -7,63 +7,63 @@ import { ArrowRight, TrendingUp, Building2, Users, Award } from "lucide-react";
 const stories = [
   {
     company: "Vingroup L&D Division",
-    industry: "Conglomerate",
+    industry: "Tập đoàn Đa ngành",
     icon: Building2,
     iconColor: "#FF5CA8",
     before: {
-      metric1: { label: "Attendance Rate", value: "94%" },
-      metric2: { label: "Visibility into Engagement", value: "None" },
-      pain: "High attendance, zero data on actual learning.",
+      metric1: { label: "Tỷ lệ Điểm danh", value: "94%" },
+      metric2: { label: "Thông tin về Engagement", value: "Không có" },
+      pain: "Điểm danh cao, bằng không dữ liệu về học tập thực sự.",
     },
     after: {
-      metric1: { label: "Participation Quality Score", value: "87%" },
-      metric2: { label: "Knowledge Retention", value: "+52%" },
-      win: "Board-presented training ROI report for the first time.",
+      metric1: { label: "Điểm Chất lượng Tham gia", value: "87%" },
+      metric2: { label: "Lưu giữ Kiến thức", value: "+52%" },
+      win: "Lần đầu tiên báo cáo ROI đào tạo được trình bày trước hội đồng quản trị.",
     },
     roi: "380% ROI",
-    timeframe: "6 months",
-    testimonial: "We went from gut feeling to boardroom evidence.",
+    timeframe: "6 tháng",
+    testimonial: "Chúng tôi từ cảm tính sang bằng chứng trước hội đồng quản trị.",
     person: "Nguyễn Thị Lan, L&D Director",
   },
   {
     company: "Masan Group HR",
-    industry: "Consumer Goods",
+    industry: "Hàng tiêu dùng",
     icon: Users,
     iconColor: "#6B7280",
     before: {
-      metric1: { label: "Completion Rate", value: "89%" },
-      metric2: { label: "Training Impact Data", value: "0 Reports" },
-      pain: "Completing modules ≠ understanding content.",
+      metric1: { label: "Tỷ lệ Hoàn thành", value: "89%" },
+      metric2: { label: "Dữ liệu Tác động Đào tạo", value: "0 Báo cáo" },
+      pain: "Hoàn thành mô-đun ≠ hiểu nội dung.",
     },
     after: {
-      metric1: { label: "Content Comprehension", value: "+67%" },
-      metric2: { label: "Manager-Ready Reports", value: "Automated" },
-      win: "Reduced training cycles by 40% by identifying what works.",
+      metric1: { label: "Hiểu nội dung", value: "+67%" },
+      metric2: { label: "Báo cáo cho Quản lý", value: "Tự động hóa" },
+      win: "Giảm chu kỳ đào tạo 40% bằng cách xác định những gì thực sự hiệu quả.",
     },
     roi: "290% ROI",
-    timeframe: "4 months",
-    testimonial: "AhaSlides turned our guesswork into science.",
+    timeframe: "4 tháng",
+    testimonial: "AhaSlides biến phỏng đoán của chúng tôi thành khoa học.",
     person: "David Park, CHRO",
   },
   {
     company: "FPT Software Academy",
-    industry: "Technology",
+    industry: "Công nghệ",
     icon: Award,
     iconColor: "#FF8BC2",
     before: {
-      metric1: { label: "Course Completion", value: "78%" },
-      metric2: { label: "Performance Correlation", value: "Unknown" },
-      pain: "No connection between training data and job performance.",
+      metric1: { label: "Hoàn thành Khóa học", value: "78%" },
+      metric2: { label: "Tương quan với Hiệu suất", value: "Chưa biết" },
+      pain: "Không có liên kết giữa dữ liệu đào tạo và hiệu suất công việc.",
     },
     after: {
-      metric1: { label: "Engagement-to-Performance Link", value: "Proven" },
-      metric2: { label: "Skill Retention at 90 Days", value: "+41%" },
-      win: "Training investment justified to C-suite with data.",
+      metric1: { label: "Liên kết Engagement–Hiệu suất", value: "Đã chứng minh" },
+      metric2: { label: "Lưu giữ Kỹ năng sau 90 ngày", value: "+41%" },
+      win: "Đầu tư đào tạo được chứng minh với ban lãnh đạo C-suite bằng dữ liệu.",
     },
     roi: "450% ROI",
-    timeframe: "8 months",
-    testimonial: "For the first time, we could prove L&D's value.",
-    person: "Dr. Anh Tuấn, Learning Director",
+    timeframe: "8 tháng",
+    testimonial: "Lần đầu tiên, chúng tôi có thể chứng minh giá trị của L&D.",
+    person: "TS. Anh Tuấn, Learning Director",
   },
 ];
 
@@ -91,15 +91,15 @@ export default function SuccessStories() {
           className="max-w-2xl mb-16"
         >
           <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Section 07 — Success Stories
+            Phần 07 — Câu chuyện thành công
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            From High Attendance to{" "}
-            <span className="text-gradient">Measurable Outcomes</span>
+            Từ Điểm danh Cao đến{" "}
+            <span className="text-gradient">Kết quả Đo lường được</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Organizations that made the shift from presence tracking to
-            engagement intelligence — and what they discovered.
+            Các doanh nghiệp đã chuyển đổi từ theo dõi hiện diện sang trí tuệ Engagement —
+            và những gì họ khám phá ra.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ export default function SuccessStories() {
                     <div className="flex items-center gap-4">
                       <div className="text-right">
                         <p className="text-2xl font-bold text-gradient">{story.roi}</p>
-                        <p className="text-xs text-[#6B7280]">in {story.timeframe}</p>
+                        <p className="text-xs text-[#6B7280]">trong {story.timeframe}</p>
                       </div>
                       <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center">
                         <TrendingUp size={18} className="text-green-600" />
@@ -148,10 +148,10 @@ export default function SuccessStories() {
                     <div className="bg-gray-50 rounded-2xl p-5 border border-gray-100">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="w-5 h-5 rounded-full bg-gray-300 flex items-center justify-center">
-                          <span className="text-[9px] font-bold text-gray-600">B</span>
+                          <span className="text-[9px] font-bold text-gray-600">T</span>
                         </div>
                         <span className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
-                          Before AhaSlides
+                          Trước AhaSlides
                         </span>
                       </div>
                       <div className="space-y-3 mb-4">
@@ -173,10 +173,10 @@ export default function SuccessStories() {
                     <div className="bg-[#FFF8FC] rounded-2xl p-5 border border-[rgba(255,92,168,0.15)]">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="w-5 h-5 rounded-full bg-[#FF5CA8] flex items-center justify-center">
-                          <span className="text-[9px] font-bold text-white">A</span>
+                          <span className="text-[9px] font-bold text-white">S</span>
                         </div>
                         <span className="text-xs font-bold text-[#FF5CA8] uppercase tracking-wider">
-                          After AhaSlides
+                          Sau AhaSlides
                         </span>
                       </div>
                       <div className="space-y-3 mb-4">

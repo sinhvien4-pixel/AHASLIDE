@@ -19,28 +19,28 @@ interface ROIDemoRoomProps {
 const features = [
   {
     icon: Activity,
-    title: "Live Participation Tracking",
-    description: "Real-time visibility into who is engaging — by individual, team, or cohort — as your session unfolds.",
+    title: "Theo dõi Tham gia Trực tiếp",
+    description: "Khả năng nhìn theo thời gian thực vào từng cá nhân, nhóm hay lớp học đang tương tác trong suốt buổi học.",
   },
   {
     icon: BarChart3,
-    title: "Real-time Analytics",
-    description: "Instantaneous dashboards that transform every interaction into structured, comparable data points.",
+    title: "Phân tích Theo thời gian thực",
+    description: "Dashboard tức thì chuyển hóa mọi tương tác thành dữ liệu có cấu trúc và có thể so sánh được.",
   },
   {
     icon: Map,
-    title: "Engagement Heatmaps",
-    description: "Visualize attention patterns across your content — discover exactly when and where engagement drops.",
+    title: "Heatmap Engagement",
+    description: "Trực quan hóa xu hướng chú ý trong nội dung — phát hiện chính xác khi nào và ở đâu Engagement giảm.",
   },
   {
     icon: FileBarChart,
-    title: "Training Effectiveness Reports",
-    description: "Automated post-session reports scoring every dimension of engagement quality against defined benchmarks.",
+    title: "Báo cáo Hiệu quả Đào tạo",
+    description: "Báo cáo tự động sau buổi học, chấm điểm mọi khía cạnh của chất lượng Engagement theo chuẩn mực đã định.",
   },
   {
     icon: PieChart,
-    title: "ROI Dashboards",
-    description: "Connect engagement data to business outcomes and generate executive-ready ROI presentations in one click.",
+    title: "Dashboard ROI",
+    description: "Kết nối dữ liệu Engagement với kết quả kinh doanh và tạo báo cáo ROI sẵn sàng cho ban lãnh đạo chỉ với một cú click.",
   },
 ];
 
@@ -77,18 +77,17 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
             transition={{ duration: 0.8 }}
           >
             <span className="text-xs font-semibold text-white/70 uppercase tracking-widest mb-5 block">
-              Section 05 — ROI Demo Room
+              Phần 05 — ROI Demo Room
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              See Engagement{" "}
-              <span className="text-white/80 italic">Become</span>{" "}
-              Data
+              Xem Engagement{" "}
+              <span className="text-white/80 italic">biến thành</span>{" "}
+              Dữ liệu
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-10">
-              Experience how AhaSlides transforms every interaction into
-              measurable business insights. In a 45-minute ROI Demo Room
-              session, you&apos;ll see real data from your industry — not a generic
-              slide deck.
+              Trải nghiệm cách AhaSlides chuyển hóa mọi tương tác thành thông tin kinh doanh có thể đo lường.
+              Trong buổi ROI Demo Room 45 phút, bạn sẽ thấy dữ liệu thực từ ngành của mình —
+              không phải bản slide chung chung.
             </p>
 
             <div className="space-y-4 mb-12">
@@ -125,11 +124,11 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
               className="inline-flex items-center gap-3 bg-white text-[#FF5CA8] px-8 py-4.5 rounded-xl font-bold text-base shadow-xl hover:-translate-y-0.5 transition-transform"
             >
               <CalendarCheck size={20} />
-              Book Your ROI Demo Room
+              Đăng ký ROI Demo Room
             </motion.button>
 
             <p className="text-white/40 text-xs mt-4">
-              45 minutes · Free · Personalized to your industry
+              45 phút · Miễn phí · Cá nhân hóa theo ngành của bạn
             </p>
           </motion.div>
 
@@ -157,21 +156,21 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
                 {/* Header */}
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-white font-bold text-sm">Q3 Training ROI Report</p>
-                    <p className="text-white/40 text-xs">Generated live · 47 participants</p>
+                    <p className="text-white font-bold text-sm">Báo cáo ROI Đào tạo Q3</p>
+                    <p className="text-white/40 text-xs">Tạo trực tiếp · 47 người tham gia</p>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                    <span className="text-white/60 text-xs">Live session</span>
+                    <span className="text-white/60 text-xs">Buổi học trực tiếp</span>
                   </div>
                 </div>
 
                 {/* KPI row */}
                 <div className="grid grid-cols-3 gap-3">
                   {[
-                    { label: "Participation", value: "87%", change: "+23%" },
-                    { label: "Retention", value: "71%", change: "+18%" },
-                    { label: "ROI Score", value: "340%", change: "+89%" },
+                    { label: "Tham gia", value: "87%", change: "+23%" },
+                    { label: "Lưu giữ KT", value: "71%", change: "+18%" },
+                    { label: "Điểm ROI", value: "340%", change: "+89%" },
                   ].map((kpi) => (
                     <div key={kpi.label} className="bg-white/10 rounded-xl p-3 text-center">
                       <p className="text-xl font-bold text-white">{kpi.value}</p>
@@ -183,7 +182,7 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
 
                 {/* Chart bars */}
                 <div className="bg-white/5 rounded-2xl p-4">
-                  <p className="text-xs text-white/50 mb-3">Engagement by Module</p>
+                  <p className="text-xs text-white/50 mb-3">Engagement theo Mô-đun</p>
                   <div className="flex items-end gap-2 h-20">
                     {[65, 82, 54, 91, 78, 67, 88].map((v, i) => (
                       <motion.div
@@ -210,7 +209,7 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
                   onClick={onBookDemo}
                   className="w-full bg-white text-[#FF5CA8] py-3 rounded-xl font-bold text-sm hover:bg-white/90 transition-colors"
                 >
-                  See Your Data Live →
+                  Xem Dữ liệu của bạn →
                 </button>
               </div>
             </div>

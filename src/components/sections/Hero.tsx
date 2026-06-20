@@ -72,7 +72,7 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#FF5CA8] animate-pulse" />
               <span className="text-xs font-semibold text-white/80 uppercase tracking-widest">
-                The Cost of Invisible Disengagement
+                Chi phí ẩn của sự thiếu tương tác
               </span>
             </motion.div>
 
@@ -82,10 +82,10 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
             >
-              You&apos;re Measuring{" "}
-              <span className="text-[#FF5CA8]">Attendance.</span>
+              Bạn đang đo{" "}
+              <span className="text-[#FF5CA8]">Điểm danh.</span>
               <br />
-              Not{" "}
+              Không phải{" "}
               <span className="relative inline-block">
                 <span className="text-gradient">Engagement.</span>
                 <motion.span
@@ -103,9 +103,9 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg md:text-xl text-white/60 leading-relaxed mb-10 max-w-lg"
             >
-              Attendance tells you who showed up.{" "}
+              Điểm danh cho bạn biết ai đến.{" "}
               <span className="text-white/85 font-medium">
-                Engagement data tells you who participated, learned, and contributed.
+                Dữ liệu Engagement cho bạn biết ai thực sự tham gia, học được gì và đóng góp như thế nào.
               </span>
             </motion.p>
 
@@ -120,13 +120,13 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
                 className="group inline-flex items-center justify-center gap-2 bg-[#FF5CA8] text-white px-7 py-4 rounded-xl font-semibold text-base hover:bg-[#FF8BC2] transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(255,92,168,0.5)] hover:-translate-y-0.5"
               >
                 <Play size={16} className="fill-white group-hover:scale-110 transition-transform" />
-                Explore the Evidence
+                Khám phá dữ liệu
               </button>
               <button
                 onClick={onBookDemo}
                 className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-7 py-4 rounded-xl font-semibold text-base border border-white/25 hover:bg-white/20 transition-all duration-300 hover:-translate-y-0.5"
               >
-                Book ROI Demo Room
+                Đăng ký ROI Demo Room
               </button>
             </motion.div>
 
@@ -151,7 +151,7 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
                 ))}
               </div>
               <p className="text-sm text-white/50">
-                <span className="text-white/80 font-semibold">500+</span> HR Leaders already measuring engagement
+                <span className="text-white/80 font-semibold">500+</span> HR Leaders đã đo lường Engagement
               </p>
             </motion.div>
           </div>
@@ -175,7 +175,7 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
-        <span className="text-xs text-white/40 uppercase tracking-widest">Scroll</span>
+        <span className="text-xs text-white/40 uppercase tracking-widest">Cuộn xuống</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

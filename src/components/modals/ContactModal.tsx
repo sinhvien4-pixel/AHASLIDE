@@ -40,8 +40,8 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl bg-[#FCE7F3] flex items-center justify-center"><Mail size={18} className="text-[#FF5CA8]" /></div>
                 <div>
-                  <h2 className="text-lg font-bold text-[#1F1F1F]">Get in Touch</h2>
-                  <p className="text-xs text-[#6B7280]">We respond within 24 hours</p>
+                  <h2 className="text-lg font-bold text-[#1F1F1F]">Liên hệ với chúng tôi</h2>
+                  <p className="text-xs text-[#6B7280]">Phản hồi trong vòng 24 giờ</p>
                 </div>
               </div>
             </div>
@@ -51,44 +51,44 @@ export default function ContactModal({ open, onClose }: ContactModalProps) {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Name *</label>
-                      <input type="text" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Your name" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
+                      <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Họ tên *</label>
+                      <input type="text" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Họ v�� tên" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
                     </div>
                     <div>
-                      <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Company</label>
-                      <input type="text" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} placeholder="Company" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
+                      <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Doanh nghiệp</label>
+                      <input type="text" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} placeholder="Tên doanh nghiệp" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
                     </div>
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Email *</label>
-                    <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="you@company.com" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
+                    <input type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="ban@congty.com" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all" />
                   </div>
                   <div>
-                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Subject</label>
+                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Chủ đề</label>
                     <select value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white">
-                      <option value="">Select a topic</option>
-                      <option>ROI Demo Room inquiry</option>
-                      <option>Pricing & Plans</option>
-                      <option>Enterprise / Large teams</option>
-                      <option>Technical support</option>
-                      <option>Partnership</option>
-                      <option>Other</option>
+                      <option value="">Chọn chủ đề</option>
+                      <option>Hỏi về ROI Demo Room</option>
+                      <option>Giá cả & Gói dịch vụ</option>
+                      <option>Doanh nghiệp lớn / Nhóm đông</option>
+                      <option>Hỗ trợ kỹ thuật</option>
+                      <option>Đối tác</option>
+                      <option>Khác</option>
                     </select>
                   </div>
                   <div>
-                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Message *</label>
-                    <textarea rows={4} required value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="How can we help you?" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] resize-none transition-all" />
+                    <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Nội dung *</label>
+                    <textarea rows={4} required value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Chúng tôi có thể giúp gì cho bạn?" className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] resize-none transition-all" />
                   </div>
                   <button type="submit" disabled={!isValid || loading} className="w-full flex items-center justify-center gap-2 bg-[#FF5CA8] text-white py-3.5 rounded-xl font-semibold text-sm disabled:opacity-50 hover:bg-[#FF8BC2] transition-all shadow-[0_4px_20px_rgba(255,92,168,0.35)]">
-                    {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <><Send size={15} /> Send Message</>}
+                    {loading ? <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" /> : <><Send size={15} /> Gửi tin nhắn</>}
                   </button>
                 </form>
               ) : (
                 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-8">
                   <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-4"><CheckCircle2 size={32} className="text-green-500" /></div>
-                  <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">Message Sent!</h3>
-                  <p className="text-[#6B7280] text-sm mb-6">Thank you, {form.name}. We&apos;ll respond to {form.email} within 24 hours.</p>
-                  <button onClick={handleClose} className="text-sm font-semibold text-[#FF5CA8] hover:underline">Close</button>
+                  <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">Đã gửi tin nhắn!</h3>
+                  <p className="text-[#6B7280] text-sm mb-6">Cảm ơn, {form.name}. Chúng tôi sẽ phản hồi đến {form.email} trong vòng 24 giờ.</p>
+                  <button onClick={handleClose} className="text-sm font-semibold text-[#FF5CA8] hover:underline">Đóng</button>
                 </motion.div>
               )}
             </div>

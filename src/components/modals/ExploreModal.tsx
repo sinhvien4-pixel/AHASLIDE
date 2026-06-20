@@ -76,9 +76,9 @@ export default function ExploreModal({ open, onClose, onSuccess }: ExploreModalP
               <div className="w-10 h-10 rounded-2xl bg-white/20 flex items-center justify-center mb-4">
                 <Unlock size={18} className="text-white" />
               </div>
-              <h2 className="text-2xl font-bold text-white mb-1">Explore the Evidence</h2>
+              <h2 className="text-2xl font-bold text-white mb-1">Khám phá dữ liệu</h2>
               <p className="text-white/70 text-sm">
-                Get free access to AhaSlides&apos; full Knowledge Hub — research, reports, and frameworks.
+                Truy cập miễn phí Knowledge Hub đầy đủ của AhaSlides — nghiên cứu, báo cáo và khung thực hành.
               </p>
             </div>
 
@@ -87,46 +87,46 @@ export default function ExploreModal({ open, onClose, onSuccess }: ExploreModalP
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
-                      Full Name *
+                      Họ và tên *
                     </label>
                     <input
                       type="text"
                       required
                       value={form.fullName}
                       onChange={(e) => setForm({ ...form, fullName: e.target.value })}
-                      placeholder="Your full name"
+                      placeholder="Họ và tên đầy đủ"
                       className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all"
                     />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
-                      Company *
+                      Doanh nghiệp *
                     </label>
                     <input
                       type="text"
                       required
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
-                      placeholder="Your company name"
+                      placeholder="Tên doanh nghiệp"
                       className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all"
                     />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
-                      Business Email *
+                      Email công việc *
                     </label>
                     <input
                       type="email"
                       required
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      placeholder="you@company.com"
+                      placeholder="ban@congty.com"
                       className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] transition-all"
                     />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
-                      Job Title *
+                      Chức danh *
                     </label>
                     <select
                       required
@@ -134,14 +134,14 @@ export default function ExploreModal({ open, onClose, onSuccess }: ExploreModalP
                       onChange={(e) => setForm({ ...form, jobTitle: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] bg-white transition-all"
                     >
-                      <option value="">Select your role</option>
-                      <option>HR Manager / Director</option>
-                      <option>L&D Manager / Director</option>
+                      <option value="">Chọn chức danh của bạn</option>
+                      <option>HR Manager / Giám đốc HR</option>
+                      <option>L&D Manager / Giám đốc L&D</option>
                       <option>Talent Development Manager</option>
-                      <option>Internal Communications Lead</option>
+                      <option>Trưởng bộ phận Truyền thông Nội bộ</option>
                       <option>CHRO / Chief People Officer</option>
-                      <option>Training Consultant</option>
-                      <option>Other</option>
+                      <option>Chuyên gia Đào tạo</option>
+                      <option>Khác</option>
                     </select>
                   </div>
 
@@ -154,13 +154,13 @@ export default function ExploreModal({ open, onClose, onSuccess }: ExploreModalP
                       <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                     ) : (
                       <>
-                        Unlock Knowledge Hub
+                        Mở khóa Knowledge Hub
                         <ArrowRight size={16} />
                       </>
                     )}
                   </button>
                   <p className="text-center text-xs text-[#9CA3AF]">
-                    No spam. Unsubscribe anytime.
+                    Kh��ng spam. Hủy đăng ký bất cứ lúc nào.
                   </p>
                 </form>
               ) : (
@@ -173,10 +173,10 @@ export default function ExploreModal({ open, onClose, onSuccess }: ExploreModalP
                     <CheckCircle2 size={32} className="text-green-500" />
                   </div>
                   <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">
-                    Knowledge Hub Unlocked!
+                    Knowledge Hub đã mở khóa!
                   </h3>
                   <p className="text-[#6B7280] text-sm">
-                    You now have full access to all research, reports and frameworks.
+                    Bạn đã có quyền truy cập đầy đủ vào tất cả nghiên cứu, báo cáo và khung thực hành.
                   </p>
                 </motion.div>
               )}

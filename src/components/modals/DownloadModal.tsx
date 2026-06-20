@@ -90,16 +90,16 @@ export default function DownloadModal({ open, onClose, resource }: DownloadModal
               {!submitted ? (
                 <>
                   <h2 className="text-lg font-bold text-[#1F1F1F] mb-1">
-                    Download Free Resource
+                    Tải xuống Tài nguyên Miễn phí
                   </h2>
                   <p className="text-sm text-[#6B7280] mb-5">
-                    Enter your details to get instant access.
+                    Nhập thông tin để truy cập ngay lập tức.
                   </p>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     {[
-                      { key: "name", label: "Full Name", type: "text", placeholder: "Your name" },
-                      { key: "email", label: "Business Email", type: "email", placeholder: "you@company.com" },
-                      { key: "company", label: "Company", type: "text", placeholder: "Your company" },
+                      { key: "name", label: "Họ và tên", type: "text", placeholder: "Họ và tên" },
+                      { key: "email", label: "Email công việc", type: "email", placeholder: "ban@congty.com" },
+                      { key: "company", label: "Doanh nghiệp", type: "text", placeholder: "Tên doanh nghiệp" },
                     ].map(({ key, label, type, placeholder }) => (
                       <div key={key}>
                         <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
@@ -117,19 +117,19 @@ export default function DownloadModal({ open, onClose, resource }: DownloadModal
                     ))}
                     <div>
                       <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">
-                        Role
+                        Chức danh
                       </label>
                       <select
                         value={form.role}
                         onChange={(e) => setForm({ ...form, role: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white"
                       >
-                        <option value="">Select your role (optional)</option>
-                        <option>HR Manager / Director</option>
-                        <option>L&D Manager / Director</option>
+                        <option value="">Chọn chức danh (tuỳ chọn)</option>
+                        <option>HR Manager / Giám đốc HR</option>
+                        <option>L&D Manager / Giám đốc L&D</option>
                         <option>CHRO / Chief People Officer</option>
-                        <option>Training Consultant</option>
-                        <option>Other</option>
+                        <option>Chuyên gia Đào tạo</option>
+                        <option>Khác</option>
                       </select>
                     </div>
 
@@ -143,7 +143,7 @@ export default function DownloadModal({ open, onClose, resource }: DownloadModal
                       ) : (
                         <>
                           <Download size={16} />
-                          Download Now — Free
+                          Tải xuống ngay — Miễn phí
                         </>
                       )}
                     </button>
@@ -159,11 +159,11 @@ export default function DownloadModal({ open, onClose, resource }: DownloadModal
                     <CheckCircle2 size={32} className="text-green-500" />
                   </div>
                   <h3 className="text-xl font-bold text-[#1F1F1F] mb-2">
-                    Download Started!
+                    Đang tải xuống!
                   </h3>
                   <p className="text-[#6B7280] text-sm mb-5">
-                    Your copy of &ldquo;{resource.title}&rdquo; is downloading.
-                    A copy has also been sent to {form.email}.
+                    Bản sao của &ldquo;{resource.title}&rdquo; đang được tải xuống.
+                    Một bản sao cũng đã được gửi đến {form.email}.
                   </p>
                   <a
                     href="#"
@@ -171,7 +171,7 @@ export default function DownloadModal({ open, onClose, resource }: DownloadModal
                     className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF5CA8] hover:underline"
                   >
                     <Download size={14} />
-                    Click here if download doesn&apos;t start
+                    Nhấn vào đây nếu tải xuống chưa bắt đầu
                   </a>
                 </motion.div>
               )}

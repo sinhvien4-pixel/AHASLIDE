@@ -64,9 +64,9 @@ export default function Home() {
         onBookDemo={openBooking}
         onDownload={() => openDownload({
           id: "engagement-report",
-          title: "Measurable Engagement Report 2024",
-          description: "The definitive guide to measuring training engagement.",
-          type: "PDF Report",
+          title: "Báo cáo Engagement Đo lường được 2024",
+          description: "Hướng dẫn toàn diện về đo lường Engagement đào tạo.",
+          type: "Báo cáo PDF",
           size: "4.2 MB",
         })}
       />

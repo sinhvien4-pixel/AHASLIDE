@@ -11,11 +11,11 @@ interface NavigationProps {
 }
 
 const navLinks = [
-  { label: "Evidence", href: "#knowledge-hub" },
-  { label: "Methodology", href: "#engagement" },
-  { label: "ROI Demo", href: "#roi-demo" },
-  { label: "Case Studies", href: "#success-stories" },
-  { label: "Resources", href: "#downloads" },
+  { label: "Dữ liệu chứng minh", href: "#knowledge-hub" },
+  { label: "Phương pháp đo lường", href: "#engagement" },
+  { label: "ROI Demo Room", href: "#roi-demo" },
+  { label: "Câu chuyện thành công", href: "#success-stories" },
+  { label: "Tài nguyên", href: "#downloads" },
 ];
 
 export default function Navigation({ onExplore, onBookDemo, onContact }: NavigationProps) {
@@ -54,7 +54,7 @@ export default function Navigation({ onExplore, onBookDemo, onContact }: Navigat
               AhaSlides
             </span>
             <span className="hidden md:inline text-xs font-medium text-[#FF5CA8] bg-[#FCE7F3] px-2 py-0.5 rounded-full">
-              PROVE IT
+              CHỨNG MINH
             </span>
           </motion.a>
 
@@ -77,19 +77,19 @@ export default function Navigation({ onExplore, onBookDemo, onContact }: Navigat
               onClick={onContact}
               className="text-sm font-medium text-[#6B7280] hover:text-[#1F1F1F] transition-colors px-4 py-2"
             >
-              Contact
+              Liên hệ
             </button>
             <button
               onClick={onExplore}
               className="text-sm font-medium text-[#FF5CA8] border border-[#FF5CA8] px-4 py-2 rounded-lg hover:bg-[#FCE7F3] transition-all duration-200"
             >
-              Explore Evidence
+              Khám phá dữ liệu
             </button>
             <button
               onClick={onBookDemo}
               className="text-sm font-medium text-white bg-[#FF5CA8] px-4 py-2 rounded-lg hover:bg-[#FF8BC2] transition-all duration-200 shadow-sm"
             >
-              Book Demo
+              Đăng ký Demo
             </button>
           </div>
 
@@ -130,13 +130,13 @@ export default function Navigation({ onExplore, onBookDemo, onContact }: Navigat
                   onClick={() => { onExplore(); setMobileOpen(false); }}
                   className="text-sm font-medium text-[#FF5CA8] border border-[#FF5CA8] px-4 py-2.5 rounded-lg text-center"
                 >
-                  Explore Evidence
+                  Khám phá dữ liệu
                 </button>
                 <button
                   onClick={() => { onBookDemo(); setMobileOpen(false); }}
                   className="text-sm font-medium text-white bg-[#FF5CA8] px-4 py-2.5 rounded-lg text-center"
                 >
-                  Book ROI Demo
+                  Đăng ký ROI Demo
                 </button>
               </div>
             </div>

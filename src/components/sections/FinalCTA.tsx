@@ -41,7 +41,7 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
           <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF5CA8] animate-pulse" />
             <span className="text-xs font-semibold text-white/70 uppercase tracking-widest">
-              The Decision Point
+              Thời điểm Quyết định
             </span>
           </span>
         </motion.div>
@@ -52,8 +52,8 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8"
         >
-          Turn Engagement{" "}
-          <span className="text-gradient">Into Evidence</span>
+          Biến Engagement{" "}
+          <span className="text-gradient">thành dữ liệu chứng minh</span>
         </motion.h2>
 
         <motion.div
@@ -63,10 +63,10 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
           className="mb-12"
         >
           <p className="text-xl md:text-2xl text-white/50 font-light">
-            Stop Guessing.
+            Ngừng phỏng đoán.
           </p>
           <p className="text-xl md:text-2xl text-white/80 font-semibold">
-            Start Measuring.
+            Bắt đầu đo lường.
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
             className="group inline-flex items-center justify-center gap-3 bg-[#FF5CA8] text-white px-8 py-5 rounded-2xl font-bold text-base hover:bg-[#FF8BC2] transition-all shadow-[0_0_40px_rgba(255,92,168,0.5)] hover:shadow-[0_0_60px_rgba(255,92,168,0.7)] hover:-translate-y-1"
           >
             <CalendarCheck size={18} />
-            Book ROI Demo Room
+            Đăng ký ROI Demo Room
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </button>
           <button
@@ -89,7 +89,7 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
             className="inline-flex items-center justify-center gap-3 bg-white/10 text-white px-8 py-5 rounded-2xl font-bold text-base border border-white/20 hover:bg-white/15 transition-all hover:-translate-y-1"
           >
             <Download size={18} />
-            Download Report
+            Tải báo cáo
           </button>
         </motion.div>
 
@@ -101,16 +101,16 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
           className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/30"
         >
           <span className="flex items-center gap-2">
-            <span className="text-green-400">✓</span> Free ROI Demo
+            <span className="text-green-400">✓</span> ROI Demo Miễn phí
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-green-400">✓</span> No Credit Card Required
+            <span className="text-green-400">✓</span> Không cần Thẻ tín dụng
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-green-400">✓</span> Personalized to Your Industry
+            <span className="text-green-400">✓</span> Cá nhân hóa theo Ngành
           </span>
           <span className="flex items-center gap-2">
-            <span className="text-green-400">✓</span> 45-Minute Session
+            <span className="text-green-400">✓</span> Buổi demo 45 phút
           </span>
         </motion.div>
       </div>

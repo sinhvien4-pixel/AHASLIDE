@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bật AHA, Ra Số Liệu | Turn on AHA, Get the Data",
+  title: "Bật AHA, Ra Số Liệu | AhaSlides",
   description:
-    "Transform engagement from assumptions into evidence. AhaSlides turns every training interaction into measurable business data.",
+    "Chuyển hóa Engagement từ phỏng đoán thành bằng chứng. AhaSlides biến mọi tương tác đào tạo thành dữ liệu kinh doanh có thể đo lường.",
   openGraph: {
     title: "Bật AHA, Ra Số Liệu | AhaSlides",
     description:
-      "Stop measuring attendance. Start measuring engagement. Discover how AhaSlides turns training interactions into actionable business insights.",
+      "Ngừng đo điểm danh. Bắt đầu đo Engagement. Khám phá cách AhaSlides biến các tương tác đào tạo thành thông tin kinh doanh có thể hành động.",
     type: "website",
   },
 };

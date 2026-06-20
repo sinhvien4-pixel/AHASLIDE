@@ -9,36 +9,36 @@ const stats = [
   {
     value: 95,
     suffix: "%",
-    label: "Attendance",
-    sublabel: "of seats filled",
-    description: "What you measure today",
+    label: "Điểm danh",
+    sublabel: "ghế được lấp đầy",
+    description: "Chỉ số bạn đang theo dõi",
     color: "#6B7280",
     bgColor: "#F9FAFB",
     icon: Eye,
-    tag: "Visible",
+    tag: "Có thể thấy",
   },
   {
     value: 42,
     suffix: "%",
-    label: "Participation",
-    sublabel: "actually engaged",
-    description: "What you're missing",
+    label: "Tham gia thực sự",
+    sublabel: "thực sự tương tác",
+    description: "Điều bạn đang bỏ lỡ",
     color: "#FF5CA8",
     bgColor: "#FFF8FC",
     icon: TrendingDown,
-    tag: "Hidden Gap",
+    tag: "Khoảng cách vô hình",
     featured: true,
   },
   {
     value: 37,
     suffix: "%",
-    label: "Retention",
-    sublabel: "knowledge kept",
-    description: "What actually matters",
+    label: "Lưu giữ kiến thức",
+    sublabel: "kiến thức được giữ lại",
+    description: "Điều thực sự quan trọng",
     color: "#FF8BC2",
     bgColor: "#FFF0F8",
     icon: AlertTriangle,
-    tag: "Critical",
+    tag: "Cốt lõi",
   },
 ];
 
@@ -66,17 +66,16 @@ export default function HiddenGap() {
           className="max-w-3xl mb-16 md:mb-24"
         >
           <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Section 02 — The Hidden Gap
+            Phần 02 — Khoảng cách vô hình
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-6">
-            The Numbers You&apos;ve Been{" "}
-            <span className="text-gradient">Trusting</span> Might Be
-            Misleading
+            Những con số bạn tin tưởng{" "}
+            <span className="text-gradient">có thể đang</span> đánh lừa bạn
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Most organizations track one metric and assume it tells the whole
-            story. It doesn&apos;t. There&apos;s a dramatic gap between what you see and
-            what&apos;s actually happening in the room.
+            Hầu hết doanh nghiệp chỉ theo dõi một chỉ số rồi cho rằng đó là toàn bộ câu chuyện.
+            Nhưng thực tế không phải vậy. Có một khoảng cách đáng kể giữa những gì bạn nhìn thấy
+            và những gì thực sự đang xảy ra.
           </p>
         </motion.div>
 
@@ -101,7 +100,7 @@ export default function HiddenGap() {
                 {stat.featured && (
                   <div className="absolute -top-3 left-8">
                     <span className="bg-[#FF5CA8] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      The Gap
+                      Khoảng cách
                     </span>
                   </div>
                 )}
@@ -166,11 +165,11 @@ export default function HiddenGap() {
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <div className="text-6xl text-[#FF5CA8] leading-none mb-6 font-serif">&ldquo;</div>
             <blockquote className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6">
-              Being present does not mean{" "}
-              <span className="text-[#FF5CA8]">being engaged.</span>
+              Có mặt không có nghĩa là{" "}
+              <span className="text-[#FF5CA8]">đang tương tác.</span>
             </blockquote>
             <p className="text-[#6B7280] text-base">
-              The difference between these two realities is where business value is either created or lost.
+              Sự khác biệt giữa hai thực tế này chính là nơi giá trị doanh nghiệp được tạo ra hoặc mất đi.
             </p>
           </div>
         </motion.div>

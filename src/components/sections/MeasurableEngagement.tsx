@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Eye, Gauge, BrainCircuit, TrendingUp, Trophy } from "lucide-react";
 
@@ -8,60 +8,60 @@ const steps = [
   {
     number: "01",
     icon: Eye,
-    title: "Observe",
+    title: "Quan sát",
     description:
-      "Capture every micro-interaction in real time — polls, Q&As, quizzes, word clouds, and live reactions — as they happen during your sessions.",
+      "Ghi nhận mọi tương tác nhỏ theo thời gian thực — bình chọn, Q&A, câu đố, đám mây từ và phản ứng trực tiếp — ngay trong buổi học.",
     visual: {
-      label: "Live Capture",
-      metrics: ["Polls: 87%", "Q&A: 64%", "Reactions: 102"],
+      label: "Ghi nhận Trực tiếp",
+      metrics: ["Bình chọn: 87%", "Q&A: 64%", "Phản ứng: 102"],
       color: "#6B7280",
     },
   },
   {
     number: "02",
     icon: Gauge,
-    title: "Measure",
+    title: "Đo lường",
     description:
-      "Automatically score participation quality, not just quantity. Who answered correctly? Who engaged deeply? Who disengaged early?",
+      "Tự động chấm điểm chất lượng tham gia, không chỉ số lượng. Ai trả lời đúng? Ai tương tác sâu? Ai mất tập trung sớm?",
     visual: {
-      label: "Quality Score",
-      metrics: ["Depth: 78%", "Accuracy: 85%", "Speed: 2.1s"],
+      label: "Điểm Chất lượng",
+      metrics: ["Chiều sâu: 78%", "Chính xác: 85%", "Tốc độ: 2.1s"],
       color: "#FF8BC2",
     },
   },
   {
     number: "03",
     icon: BrainCircuit,
-    title: "Analyze",
+    title: "Phân tích",
     description:
-      "Surface patterns across teams, sessions, and time. Identify knowledge gaps, engagement drop-off points, and high-performing participants.",
+      "Phát hiện xu hướng xuyên suốt các nhóm, buổi học và thời gian. Xác định lỗ hổng kiến thức, điểm giảm Engagement và người học xuất sắc.",
     visual: {
-      label: "Pattern Analysis",
-      metrics: ["Gap Found: 3", "Trend: +12%", "Risk: 2 users"],
+      label: "Phân tích Xu hướng",
+      metrics: ["Lỗ hổng: 3", "Xu hướng: +12%", "Rủi ro: 2 người"],
       color: "#FF5CA8",
     },
   },
   {
     number: "04",
     icon: TrendingUp,
-    title: "Improve",
+    title: "Cải tiến",
     description:
-      "Act on real data. Redesign content, adjust delivery, and target interventions based on what the numbers actually reveal — not assumptions.",
+      "Hành động từ dữ liệu thực. Thiết kế lại nội dung, điều chỉnh cách triển khai và can thiệp có mục tiêu dựa trên những gì số liệu thực sự tiết lộ — không phải phỏng đoán.",
     visual: {
-      label: "Improvement",
-      metrics: ["Content: A+", "Delivery: ↑", "Impact: +23%"],
+      label: "Cải tiến",
+      metrics: ["Nội dung: A+", "Triển khai: ↑", "Tác động: +23%"],
       color: "#FF5CA8",
     },
   },
   {
     number: "05",
     icon: Trophy,
-    title: "Prove Impact",
+    title: "Chứng minh tác động",
     description:
-      "Generate board-ready reports showing training ROI, engagement lift, knowledge retention, and business outcomes — in one click.",
+      "Tạo báo cáo sẵn sàng cho ban lãnh đạo, thể hiện ROI đào tạo, mức tăng Engagement, lưu giữ kiến thức và kết quả kinh doanh — chỉ với một cú click.",
     visual: {
-      label: "ROI Report",
-      metrics: ["ROI: 340%", "Retention: +41%", "Value: $2.1M"],
+      label: "Báo cáo ROI",
+      metrics: ["ROI: 340%", "Lưu giữ KT: +41%", "Giá trị: $2.1M"],
       color: "#FF5CA8",
     },
   },
@@ -108,7 +108,7 @@ function StepCard({
                 isActive ? "text-[#FF5CA8]" : "text-[#6B7280]"
               }`}
             >
-              Step {step.number}
+              Bước {step.number}
             </span>
           </div>
           <h3
@@ -172,15 +172,15 @@ export default function MeasurableEngagement() {
           className="max-w-3xl mb-16"
         >
           <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Section 04 — Methodology
+            Phần 04 — Phương pháp đo lường
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            What Is{" "}
-            <span className="text-gradient">Measurable Engagement</span>
+            Đo lường{" "}
+            <span className="text-gradient">Engagement</span> là gì?
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            A five-step methodology that transforms subjective observations into
-            objective, actionable business evidence.
+            Phương pháp 5 bước chuyển hóa quan sát chủ quan thành dữ liệu kinh doanh khách quan,
+            có thể hành động ngay lập tức.
           </p>
         </motion.div>
 
@@ -222,7 +222,7 @@ export default function MeasurableEngagement() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-wider">
-                      Step {activeData.number}
+                      Bước {activeData.number}
                     </p>
                     <p className="text-white font-bold">{activeData.title}</p>
                   </div>
@@ -239,10 +239,10 @@ export default function MeasurableEngagement() {
                     {activeStep === 0 && (
                       <div className="space-y-3">
                         {[
-                          { label: "Word Cloud", v: 92 },
-                          { label: "Live Poll", v: 87 },
-                          { label: "Q&A Activity", v: 64 },
-                          { label: "Emoji Reactions", v: 78 },
+                          { label: "Đám mây từ", v: 92 },
+                          { label: "Bình chọn trực tiếp", v: 87 },
+                          { label: "Hoạt động Q&A", v: 64 },
+                          { label: "Phản ứng Emoji", v: 78 },
                         ].map((item) => (
                           <div key={item.label}>
                             <div className="flex justify-between text-xs text-white/50 mb-1">
@@ -266,10 +266,10 @@ export default function MeasurableEngagement() {
                     {activeStep === 1 && (
                       <div className="grid grid-cols-2 gap-3">
                         {[
-                          { label: "Depth Score", value: "78%" },
-                          { label: "Accuracy Rate", value: "85%" },
-                          { label: "Avg Response", value: "2.1s" },
-                          { label: "Completion", value: "91%" },
+                          { label: "Điểm Chiều sâu", value: "78%" },
+                          { label: "Tỷ lệ chính xác", value: "85%" },
+                          { label: "Phản hồi TB", value: "2.1s" },
+                          { label: "Hoàn thành", value: "91%" },
                         ].map((item) => (
                           <div key={item.label} className="bg-white/5 rounded-xl p-3 text-center">
                             <p className="text-2xl font-bold text-[#FF5CA8]">{item.value}</p>
@@ -282,16 +282,16 @@ export default function MeasurableEngagement() {
                     {activeStep === 2 && (
                       <div className="space-y-3">
                         <div className="bg-red-950/30 border border-red-900/30 rounded-xl p-3">
-                          <p className="text-xs text-red-400 font-semibold mb-1">⚠ Knowledge Gap Detected</p>
-                          <p className="text-xs text-white/50">Module 3: Data Analysis — 3 team members below threshold</p>
+                          <p className="text-xs text-red-400 font-semibold mb-1">⚠ Phát hiện lỗ hổng kiến thức</p>
+                          <p className="text-xs text-white/50">Mô-đun 3: Phân tích dữ liệu — 3 thành viên dưới ngưỡng</p>
                         </div>
                         <div className="bg-green-950/30 border border-green-900/30 rounded-xl p-3">
-                          <p className="text-xs text-green-400 font-semibold mb-1">✓ Positive Trend</p>
-                          <p className="text-xs text-white/50">Overall engagement up +12% vs. last quarter</p>
+                          <p className="text-xs text-green-400 font-semibold mb-1">✓ Xu hướng tích cực</p>
+                          <p className="text-xs text-white/50">Engagement tổng thể tăng +12% so với quý trước</p>
                         </div>
                         <div className="bg-yellow-950/30 border border-yellow-900/30 rounded-xl p-3">
-                          <p className="text-xs text-yellow-400 font-semibold mb-1">🔍 Drop-off at 23 min</p>
-                          <p className="text-xs text-white/50">Engagement dips consistently at lecture-heavy segments</p>
+                          <p className="text-xs text-yellow-400 font-semibold mb-1">🔍 Giảm Engagement ở phút 23</p>
+                          <p className="text-xs text-white/50">Engagement giảm nhất quán ở các phần giảng nhiều</p>
                         </div>
                       </div>
                     )}
@@ -299,10 +299,10 @@ export default function MeasurableEngagement() {
                     {activeStep === 3 && (
                       <div className="space-y-3">
                         {[
-                          { label: "Content Redesign", status: "Applied", color: "text-green-400" },
-                          { label: "Interactive Segments +3", status: "Scheduled", color: "text-blue-400" },
-                          { label: "Targeted Coaching × 2", status: "In Progress", color: "text-yellow-400" },
-                          { label: "Engagement +23%", status: "Measured", color: "text-[#FF5CA8]" },
+                          { label: "Thiết kế lại nội dung", status: "Đã áp dụng", color: "text-green-400" },
+                          { label: "Thêm 3 phần tương tác", status: "Đã lên lịch", color: "text-blue-400" },
+                          { label: "Coaching mục tiêu × 2", status: "Đang thực hiện", color: "text-yellow-400" },
+                          { label: "Engagement +23%", status: "Đã đo được", color: "text-[#FF5CA8]" },
                         ].map((item) => (
                           <div key={item.label} className="flex items-center justify-between">
                             <span className="text-xs text-white/60">{item.label}</span>
@@ -323,13 +323,13 @@ export default function MeasurableEngagement() {
                         >
                           340%
                         </motion.div>
-                        <p className="text-white/50 text-sm mb-4">Training ROI</p>
+                        <p className="text-white/50 text-sm mb-4">ROI Đào tạo</p>
                         <div className="grid grid-cols-2 gap-2">
                           {[
-                            { l: "Retention", v: "+41%" },
-                            { l: "Business Value", v: "$2.1M" },
-                            { l: "NPS Score", v: "9.2" },
-                            { l: "Exec Approval", v: "100%" },
+                            { l: "Lưu giữ KT", v: "+41%" },
+                            { l: "Giá trị KD", v: "$2.1M" },
+                            { l: "Điểm NPS", v: "9.2" },
+                            { l: "Ban LD chấp thuận", v: "100%" },
                           ].map((d) => (
                             <div key={d.l} className="bg-white/5 rounded-lg p-2 text-center">
                               <p className="text-sm font-bold text-white">{d.v}</p>

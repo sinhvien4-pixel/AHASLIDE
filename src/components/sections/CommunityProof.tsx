@@ -16,10 +16,10 @@ const posts = [
     avatar: "PT",
     avatarColor: "from-[#0077B5] to-[#005885]",
     content:
-      "Just ran our first AhaSlides session with real-time engagement tracking. The result? 94% attendance as usual... but only 51% active participation. This data is going straight to our training redesign meeting next week. The numbers don't lie.",
+      "Vừa chạy buổi AhaSlides đầu tiên với theo dõi Engagement theo thời gian thực. Kết quả? Điểm danh 94% như thường lệ... nhưng chỉ có 51% tham gia thực sự. Dữ liệu này đi thẳng vào cuộc họp thiết kế lại đào tạo của chúng tôi tuần tới. Số liệu không nói dối.",
     likes: 234,
     comments: 41,
-    time: "2 days ago",
+    time: "2 ngày trước",
     tag: "#L&D #TrainingData",
   },
   {
@@ -29,10 +29,10 @@ const posts = [
     avatar: "MH",
     avatarColor: "from-[#FF5CA8] to-[#FF8BC2]",
     content:
-      "Had an interesting conversation with our CEO today. She asked why training ROI is never reported to the board. My answer: because we never had the data. That changes now. AhaSlides gave us our first real engagement dashboard last quarter.",
+      "Hôm nay có một cuộc trò chuyện thú vị với CEO của chúng tôi. Bà ấy hỏi tại sao ROI đào tạo chưa bao giờ được báo cáo cho hội đồng quản trị. Câu trả lời của tôi: vì chúng tôi chưa bao giờ có dữ liệu. Điều đó thay đổi từ bây giờ. AhaSlides đã cho chúng tôi Dashboard Engagement thực sự đầu tiên vào quý trước.",
     likes: 512,
     comments: 87,
-    time: "5 days ago",
+    time: "5 ngày trước",
     tag: "#HRLeadership #TrainingROI",
   },
   {
@@ -42,23 +42,23 @@ const posts = [
     avatar: "LN",
     avatarColor: "from-[#6B7280] to-[#9CA3AF]",
     content:
-      "Question for the community: Has anyone successfully presented training ROI to a CFO? We just did it for the first time using engagement data from our Q2 AhaSlides sessions. The reaction was completely different from our usual attendance reports.",
+      "Câu hỏi cho cộng đồng: Có ai đã thành công trình bày ROI đào tạo cho CFO chưa? Chúng tôi vừa làm điều đó lần đầu tiên bằng dữ liệu Engagement từ các buổi AhaSlides Q2. Phản ứng hoàn toàn khác với các báo cáo điểm danh thông thường.",
     likes: 389,
     comments: 126,
-    time: "1 week ago",
+    time: "1 tuần trước",
     tag: "#HRCommunity",
   },
   {
-    platform: "Success Story",
+    platform: "Câu chuyện thành công",
     author: "Đức Nguyễn",
     role: "Training Director · Manufacturing",
     avatar: "DN",
     avatarColor: "from-[#FF8BC2] to-[#FF5CA8]",
     content:
-      "6 months ago: 'Great training day! 95% attendance!' Today: 'Engagement Score 78%, Knowledge Retention 71%, ROI 3.4x projected value.' Same team. Same content. Completely different data story. This is what measurable engagement looks like.",
+      "6 tháng trước: 'Buổi đào tạo tuyệt vời! Điểm danh 95%!' Hôm nay: 'Điểm Engagement 78%, Lưu giữ Kiến thức 71%, ROI 3.4x giá trị dự kiến.' Cùng đội. Cùng nội dung. Câu chuyện dữ liệu hoàn toàn khác. Đây là Engagement có thể đo lường.",
     likes: 678,
     comments: 94,
-    time: "2 weeks ago",
+    time: "2 tuần trước",
     tag: "#EngagementData #Proof",
   },
 ];
@@ -88,16 +88,15 @@ export default function CommunityProof({ onJoin }: CommunityProofProps) {
         >
           <div className="max-w-2xl">
             <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-              Section 09 — Community Proof
+              Phần 09 — Cộng đồng xác thực
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-              The Conversation Is{" "}
-              <span className="text-gradient">Already Happening</span>
+              Cuộc trò chuyện{" "}
+              <span className="text-gradient">đang diễn ra</span>
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              HR leaders and L&D professionals are sharing their measurable
-              engagement discoveries across professional networks — and the
-              results are undeniable.
+              Các HR Leader và chuyên gia L&D đang chia sẻ những khám phá về Engagement
+              có thể đo lường trên các mạng chuyên nghiệp — và kết quả là không thể phủ nhận.
             </p>
           </div>
 
@@ -106,7 +105,7 @@ export default function CommunityProof({ onJoin }: CommunityProofProps) {
             className="flex-shrink-0 inline-flex items-center gap-2 bg-[#FF5CA8] text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-[#FF8BC2] transition-all shadow-lg hover:-translate-y-0.5"
           >
             <Users size={16} />
-            Join the Discussion
+            Tham gia Thảo luận
           </button>
         </motion.div>
 
@@ -162,7 +161,7 @@ export default function CommunityProof({ onJoin }: CommunityProofProps) {
                 </button>
                 <button className="flex items-center gap-1.5 text-xs text-[#6B7280] hover:text-[#FF5CA8] transition-colors ml-auto">
                   <Share2 size={12} />
-                  Share
+                  Chia sẻ
                 </button>
               </div>
             </motion.div>
@@ -177,14 +176,14 @@ export default function CommunityProof({ onJoin }: CommunityProofProps) {
           className="text-center"
         >
           <p className="text-[#6B7280] text-sm mb-5">
-            Join <span className="font-semibold text-[#1F1F1F]">2,400+</span> HR and L&D professionals in our engagement measurement community
+            Tham gia cùng <span className="font-semibold text-[#1F1F1F]">2.400+</span> HR và L&D professionals trong cộng đồng đo lường Engagement
           </p>
           <button
             onClick={onJoin}
             className="inline-flex items-center gap-2 text-[#FF5CA8] border border-[#FF5CA8] px-6 py-3 rounded-xl font-semibold text-sm hover:bg-[#FCE7F3] transition-all"
           >
             <Users size={16} />
-            Join HR Engagement Community →
+            Tham gia Cộng đồng HR Engagement →
           </button>
         </motion.div>
       </div>

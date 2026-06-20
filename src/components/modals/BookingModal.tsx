@@ -25,7 +25,7 @@ const DATES = Array.from({ length: 14 }, (_, i) => {
   return d;
 }).filter(Boolean) as Date[];
 
-const stepLabels = ["Personal Info", "Team Context", "Book Session"];
+const stepLabels = ["Thông tin cá nhân", "Bối cảnh nhóm", "Đặt lịch"];
 const stepIcons = [User, Building2, CalendarCheck];
 
 export default function BookingModal({ open, onClose }: BookingModalProps) {
@@ -92,9 +92,9 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
               <div className="w-10 h-10 rounded-2xl bg-[rgba(255,92,168,0.2)] flex items-center justify-center mb-4">
                 <CalendarCheck size={18} className="text-[#FF5CA8]" />
               </div>
-              <h2 className="text-xl font-bold text-white mb-1">Book ROI Demo Room</h2>
+              <h2 className="text-xl font-bold text-white mb-1">Đăng ký ROI Demo Room</h2>
               <p className="text-white/50 text-sm">
-                45-minute personalized session · Free · No commitment
+                Buổi demo cá nhân hóa 45 phút · Miễn phí · Không ràng buộc
               </p>
 
               {/* Step progress */}
@@ -134,44 +134,44 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     <CheckCircle2 size={40} className="text-[#FF5CA8]" />
                   </div>
                   <h3 className="text-2xl font-bold text-[#1F1F1F] mb-3">
-                    Demo Booked Successfully!
+                    Đặt lịch Demo thành công!
                   </h3>
                   <p className="text-[#6B7280] mb-5">
-                    Your ROI Demo Room session has been confirmed.
+                    Buổi ROI Demo Room của bạn đã được xác nhận.
                   </p>
                   <div className="bg-[#FFF8FC] rounded-2xl p-5 text-left space-y-3 border border-[rgba(255,92,168,0.15)]">
                     <div className="flex justify-between text-sm">
-                      <span className="text-[#6B7280]">Name</span>
+                      <span className="text-[#6B7280]">Họ tên</span>
                       <span className="font-semibold text-[#1F1F1F]">{step1.name}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-[#6B7280]">Date</span>
+                      <span className="text-[#6B7280]">Ngày</span>
                       <span className="font-semibold text-[#1F1F1F]">{step3.date}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-[#6B7280]">Time</span>
+                      <span className="text-[#6B7280]">Giờ</span>
                       <span className="font-semibold text-[#1F1F1F]">{step3.time} ({step3.timezone.replace("Asia/", "")})</span>
                     </div>
                   </div>
                   <p className="text-xs text-[#9CA3AF] mt-4">
-                    A confirmation email has been sent to {step1.email}
+                    Email xác nhận đã được gửi đến {step1.email}
                   </p>
                   <button
                     onClick={handleClose}
                     className="mt-6 text-sm font-semibold text-[#FF5CA8] hover:underline"
                   >
-                    Close
+                    Đóng
                   </button>
                 </motion.div>
               ) : (
                 <AnimatePresence mode="wait">
                   {step === 0 && (
                     <motion.div key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
-                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">About You</h3>
+                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">Thông tin của bạn</h3>
                       {[
-                        { key: "name", label: "Full Name", type: "text", placeholder: "Your full name" },
-                        { key: "email", label: "Business Email", type: "email", placeholder: "you@company.com" },
-                        { key: "company", label: "Company", type: "text", placeholder: "Your company" },
+                        { key: "name", label: "Họ và tên", type: "text", placeholder: "Họ và tên đầy đủ" },
+                        { key: "email", label: "Email công việc", type: "email", placeholder: "ban@congty.com" },
+                        { key: "company", label: "Doanh nghiệp", type: "text", placeholder: "Tên doanh nghiệp" },
                       ].map(({ key, label, type, placeholder }) => (
                         <div key={key}>
                           <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">{label} *</label>
@@ -186,19 +186,19 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                         </div>
                       ))}
                       <div>
-                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Role *</label>
+                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Chức danh *</label>
                         <select
                           required
                           value={step1.role}
                           onChange={(e) => setStep1({ ...step1, role: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white transition-all"
                         >
-                          <option value="">Select your role</option>
-                          <option>HR Manager / Director</option>
-                          <option>L&D Manager / Director</option>
+                          <option value="">Chọn chức danh</option>
+                          <option>HR Manager / Giám đốc HR</option>
+                          <option>L&D Manager / Giám đốc L&D</option>
                           <option>CHRO / Chief People Officer</option>
-                          <option>Training Consultant</option>
-                          <option>Internal Comms Lead</option>
+                          <option>Chuyên gia Đào tạo</option>
+                          <option>Trưởng bộ phận Truyền thông Nội bộ</option>
                         </select>
                       </div>
                     </motion.div>
@@ -206,44 +206,44 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
                   {step === 1 && (
                     <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
-                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">Your Team Context</h3>
+                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">Bối cảnh Nhóm của bạn</h3>
                       <div>
-                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Team Size *</label>
+                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Quy mô Nhóm *</label>
                         <select
                           value={step2.teamSize}
                           onChange={(e) => setStep2({ ...step2, teamSize: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white"
                         >
-                          <option value="">Select team size</option>
-                          <option>1–50 employees</option>
-                          <option>51–200 employees</option>
-                          <option>201–1,000 employees</option>
-                          <option>1,001–5,000 employees</option>
-                          <option>5,000+ employees</option>
+                          <option value="">Chọn quy mô nhóm</option>
+                          <option>1–50 nhân viên</option>
+                          <option>51–200 nhân viên</option>
+                          <option>201–1.000 nhân viên</option>
+                          <option>1.001–5.000 nhân viên</option>
+                          <option>5.000+ nhân viên</option>
                         </select>
                       </div>
                       <div>
-                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Training Frequency *</label>
+                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Tần suất Đào tạo *</label>
                         <select
                           value={step2.trainingFrequency}
                           onChange={(e) => setStep2({ ...step2, trainingFrequency: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white"
                         >
-                          <option value="">How often do you train?</option>
-                          <option>Weekly</option>
-                          <option>Bi-weekly</option>
-                          <option>Monthly</option>
-                          <option>Quarterly</option>
-                          <option>Ad-hoc / Project-based</option>
+                          <option value="">Bạn đào tạo thường xuyên như thế nào?</option>
+                          <option>Hàng tuần</option>
+                          <option>Hai tuần một lần</option>
+                          <option>Hàng tháng</option>
+                          <option>Hàng quý</option>
+                          <option>Theo nhu cầu</option>
                         </select>
                       </div>
                       <div>
-                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Current Challenges</label>
+                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Thách thức hiện tại</label>
                         <textarea
                           rows={3}
                           value={step2.challenges}
                           onChange={(e) => setStep2({ ...step2, challenges: e.target.value })}
-                          placeholder="What engagement or measurement challenges are you facing? (optional)"
+                          placeholder="Bạn đang đối mặt với thách thức Engagement hay đo lường nào? (tuỳ chọn)"
                           className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] focus:ring-2 focus:ring-[rgba(255,92,168,0.1)] outline-none text-sm text-[#1F1F1F] placeholder:text-[#9CA3AF] resize-none transition-all"
                         />
                       </div>
@@ -252,17 +252,17 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
                   {step === 2 && (
                     <motion.div key="step3" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-5">
-                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">Pick Your Session</h3>
+                      <h3 className="text-lg font-bold text-[#1F1F1F] mb-5">Chọn Buổi demo</h3>
 
                       {/* Date picker */}
                       <div>
                         <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-3">
-                          Select Date *
+                          Chọn Ngày *
                         </label>
                         <div className="grid grid-cols-4 gap-2">
                           {DATES.slice(0, 8).map((d) => {
                             const key = d.toISOString().split("T")[0];
-                            const label = d.toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short" });
+                            const label = d.toLocaleDateString("vi-VN", { weekday: "short", day: "numeric", month: "short" });
                             return (
                               <button
                                 key={key}
@@ -284,7 +284,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                       {/* Time picker */}
                       <div>
                         <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-3">
-                          Select Time *
+                          Chọn Giờ *
                         </label>
                         <div className="grid grid-cols-5 gap-2">
                           {TIMES.map((t) => (
@@ -306,17 +306,17 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
                       {/* Timezone */}
                       <div>
-                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Timezone</label>
+                        <label className="text-xs font-semibold text-[#6B7280] uppercase tracking-wider block mb-1.5">Múi giờ</label>
                         <select
                           value={step3.timezone}
                           onChange={(e) => setStep3({ ...step3, timezone: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-[rgba(255,92,168,0.2)] focus:border-[#FF5CA8] outline-none text-sm text-[#1F1F1F] bg-white"
                         >
-                          <option value="Asia/Ho_Chi_Minh">Vietnam (GMT+7)</option>
-                          <option value="Asia/Bangkok">Thailand (GMT+7)</option>
+                          <option value="Asia/Ho_Chi_Minh">Việt Nam (GMT+7)</option>
+                          <option value="Asia/Bangkok">Thái Lan (GMT+7)</option>
                           <option value="Asia/Singapore">Singapore (GMT+8)</option>
                           <option value="Asia/Jakarta">Indonesia (GMT+7)</option>
-                          <option value="Asia/Tokyo">Japan (GMT+9)</option>
+                          <option value="Asia/Tokyo">Nhật Bản (GMT+9)</option>
                         </select>
                       </div>
                     </motion.div>
@@ -334,14 +334,14 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     className="flex items-center gap-2 text-sm font-medium text-[#6B7280] hover:text-[#1F1F1F] transition-colors"
                   >
                     <ArrowLeft size={14} />
-                    Back
+                    Quay lại
                   </button>
                 ) : (
                   <button
                     onClick={handleClose}
                     className="text-sm font-medium text-[#6B7280] hover:text-[#1F1F1F] transition-colors"
                   >
-                    Cancel
+                    Hủy
                   </button>
                 )}
 
@@ -351,7 +351,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     disabled={step === 0 ? !canProceed1 : !canProceed2}
                     className="flex items-center gap-2 bg-[#FF5CA8] text-white px-6 py-2.5 rounded-xl font-semibold text-sm disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#FF8BC2] transition-all"
                   >
-                    Continue
+                    Tiếp tục
                     <ArrowRight size={14} />
                   </button>
                 ) : (
@@ -365,7 +365,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     ) : (
                       <>
                         <CalendarCheck size={14} />
-                        Confirm Booking
+                        Xác nhận đặt lịch
                       </>
                     )}
                   </button>

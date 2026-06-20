@@ -22,68 +22,68 @@ interface KnowledgeHubProps {
 const resources = [
   {
     icon: FileText,
-    type: "Research Report",
-    title: "The Engagement Measurement Framework 2024",
+    type: "Báo cáo Nghiên cứu",
+    title: "Khung đo lường Engagement 2024",
     description:
-      "A comprehensive analysis of how 500+ organizations measure training effectiveness — and what separates the leaders from the laggards.",
-    readTime: "12 min read",
+      "Phân tích toàn diện về cách 500+ doanh nghiệp đo lường hiệu quả đào tạo — và điều gì tạo ra sự khác biệt giữa các tổ chức dẫn đầu và những tổ chức còn lại.",
+    readTime: "Đọc 12 phút",
     featured: true,
-    tag: "New",
+    tag: "Mới",
   },
   {
     icon: BookOpen,
-    type: "Whitepaper",
-    title: "Beyond Kirkpatrick: Modern Training ROI Models",
+    type: "Tài liệu Chuyên sâu",
+    title: "Vượt qua Kirkpatrick: Mô hình ROI đào tạo hiện đại",
     description:
-      "How modern L&D teams are moving past legacy evaluation frameworks to build real-time engagement intelligence.",
-    readTime: "8 min read",
-    tag: "Popular",
+      "Cách các đội L&D hiện đại vượt qua khung đánh giá cũ để xây dựng trí tuệ Engagement theo thời gian thực.",
+    readTime: "Đọc 8 phút",
+    tag: "Phổ biến",
   },
   {
     icon: BarChart3,
-    type: "Industry Insights",
-    title: "Vietnam HR Benchmark Report Q3 2024",
+    type: "Thông tin Ngành",
+    title: "Báo cáo Chuẩn mực HR Việt Nam Q3 2024",
     description:
-      "Exclusive data on engagement rates across Vietnam's fastest-growing industries. Where does your organization stand?",
-    readTime: "15 min read",
-    tag: "Exclusive",
+      "Dữ liệu độc quyền về tỷ lệ Engagement trong các ngành tăng trưởng nhanh nhất Việt Nam. Doanh nghiệp của bạn đang đứng ở đâu?",
+    readTime: "Đọc 15 phút",
+    tag: "Độc quyền",
   },
   {
     icon: Users2,
-    type: "Case Studies",
-    title: "From 95% Attendance to 89% Retention",
+    type: "Tình huống thực tế",
+    title: "Từ 95% điểm danh đến 89% lưu giữ kiến thức",
     description:
-      "How a Fortune 500 manufacturing company transformed their L&D program with measurable engagement data.",
-    readTime: "6 min read",
-    tag: "Case Study",
+      "Cách một tập đoàn sản xuất Fortune 500 chuyển đổi chương trình L&D với dữ liệu Engagement có thể đo lường.",
+    readTime: "Đọc 6 phút",
+    tag: "Tình huống",
   },
   {
     icon: Lightbulb,
-    type: "Framework",
-    title: "The 5-Step Measurable Engagement Model",
+    type: "Khung thực hành",
+    title: "Mô hình Engagement 5 bước có thể đo lường",
     description:
-      "A practical implementation guide for HR leaders who need to demonstrate training value to executive stakeholders.",
-    readTime: "10 min read",
-    tag: "Framework",
+      "Hướng dẫn triển khai thực tế dành cho HR Leaders cần chứng minh giá trị đào tạo với ban lãnh đạo cấp cao.",
+    readTime: "Đọc 10 phút",
+    tag: "Khung thực hành",
   },
   {
     icon: Compass,
-    type: "Interactive Guide",
-    title: "Calculate Your Training ROI in 5 Minutes",
+    type: "Công cụ Tương tác",
+    title: "Tính ROI đào tạo của bạn trong 5 phút",
     description:
-      "An interactive calculator that shows exactly how much invisible disengagement is costing your organization annually.",
-    readTime: "5 min read",
-    tag: "Interactive",
+      "Công cụ tính toán tương tác cho thấy chính xác sự thiếu tương tác vô hình đang tiêu tốn bao nhiêu của doanh nghiệp mỗi năm.",
+    readTime: "Dùng 5 phút",
+    tag: "Tương tác",
   },
 ];
 
 const tagColors: Record<string, string> = {
-  New: "bg-green-50 text-green-600",
-  Popular: "bg-blue-50 text-blue-600",
-  Exclusive: "bg-purple-50 text-purple-600",
-  "Case Study": "bg-orange-50 text-orange-600",
-  Framework: "bg-[#FCE7F3] text-[#FF5CA8]",
-  Interactive: "bg-yellow-50 text-yellow-600",
+  "Mới": "bg-green-50 text-green-600",
+  "Phổ biến": "bg-blue-50 text-blue-600",
+  "Độc quyền": "bg-purple-50 text-purple-600",
+  "Tình huống": "bg-orange-50 text-orange-600",
+  "Khung thực hành": "bg-[#FCE7F3] text-[#FF5CA8]",
+  "Tương tác": "bg-yellow-50 text-yellow-600",
 };
 
 const fadeUp = {
@@ -111,16 +111,15 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
         >
           <div className="max-w-2xl">
             <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-              Section 03 — Knowledge Hub
+              Phần 03 — Knowledge Hub
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-              Evidence,{" "}
-              <span className="text-gradient">Not Assumptions</span>
+              Dữ liệu thay cho{" "}
+              <span className="text-gradient">phỏng đoán</span>
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              A curated resource center containing research, frameworks, reports
-              and measurable engagement insights — built for HR and L&D leaders
-              who demand evidence.
+              Thư viện tài nguyên chuyên biệt chứa đựng nghiên cứu, khung thực hành, báo cáo
+              và thông tin Engagement — được xây dựng dành riêng cho HR và L&D Leaders cần dữ liệu.
             </p>
           </div>
 
@@ -130,12 +129,12 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
               className="flex-shrink-0 inline-flex items-center gap-2 bg-[#FF5CA8] text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-[#FF8BC2] transition-all shadow-lg hover:shadow-[0_8px_30px_rgba(255,92,168,0.4)] hover:-translate-y-0.5"
             >
               <Unlock size={16} />
-              Unlock All Resources
+              Mở khóa toàn bộ tài nguyên
             </button>
           ) : (
             <div className="flex-shrink-0 inline-flex items-center gap-2 bg-green-50 text-green-700 px-6 py-3.5 rounded-xl font-semibold border border-green-200">
               <Unlock size={16} />
-              Knowledge Hub Unlocked
+              Knowledge Hub đã mở khóa
             </div>
           )}
         </motion.div>
@@ -168,7 +167,7 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
                       onClick={onUnlock}
                       className="text-sm font-semibold text-[#FF5CA8] hover:underline"
                     >
-                      Unlock to read →
+                      Mở khóa để đọc →
                     </button>
                   </div>
                 )}
@@ -202,7 +201,7 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
                 <div className="flex items-center justify-between pt-4 border-t border-[rgba(255,92,168,0.08)]">
                   <span className="text-xs text-[#6B7280]">{resource.readTime}</span>
                   <button className="flex items-center gap-1.5 text-xs font-semibold text-[#FF5CA8] group-hover:gap-2.5 transition-all">
-                    Read now
+                    Đọc ngay
                     <ArrowRight size={12} />
                   </button>
                 </div>
@@ -221,10 +220,10 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
           >
             <div>
               <p className="text-white font-bold text-xl mb-1">
-                Get access to the full Knowledge Hub
+                Truy cập toàn bộ Knowledge Hub
               </p>
               <p className="text-white/60 text-sm">
-                6 research reports, whitepapers, case studies, and interactive guides — free access.
+                6 báo cáo nghiên cứu, tài liệu chuyên sâu, tình huống thực tế và công cụ tương tác — truy cập miễn phí.
               </p>
             </div>
             <button
@@ -232,7 +231,7 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
               className="flex-shrink-0 inline-flex items-center gap-2 bg-[#FF5CA8] text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-[#FF8BC2] transition-all whitespace-nowrap shadow-[0_0_30px_rgba(255,92,168,0.4)]"
             >
               <Unlock size={16} />
-              Unlock Free Access
+              Mở khóa miễn phí
             </button>
           </motion.div>
         )}

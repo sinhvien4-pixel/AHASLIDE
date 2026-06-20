@@ -12,26 +12,26 @@ interface DownloadCenterProps {
 const resources: DownloadResource[] = [
   {
     id: "engagement-report",
-    title: "Measurable Engagement Report 2024",
+    title: "Báo cáo Engagement Đo lường được 2024",
     description:
-      "The definitive guide to measuring training engagement. Includes benchmarks, scoring models, and 15 case studies from across Southeast Asia.",
-    type: "PDF Report",
+      "Hướng dẫn toàn diện về đo lường Engagement đào tạo. Bao gồm chuẩn mực, mô hình chấm điểm và 15 tình huống thực tế từ khắp Đông Nam Á.",
+    type: "Báo cáo PDF",
     size: "4.2 MB",
   },
   {
     id: "roi-framework",
-    title: "Training ROI Framework",
+    title: "Khung ROI Đào tạo",
     description:
-      "A step-by-step framework for calculating, communicating, and continuously improving training ROI in organizations of any size.",
-    type: "Framework PDF",
+      "Khung từng bước để tính toán, truyền đạt và liên tục cải thiện ROI đào tạo trong tổ chức mọi quy mô.",
+    type: "PDF Khung thực hành",
     size: "2.8 MB",
   },
   {
     id: "analytics-guide",
-    title: "Engagement Analytics Guide",
+    title: "Hướng dẫn Phân tích Engagement",
     description:
-      "Technical guide to setting up engagement analytics pipelines, dashboards, and automated reports using AhaSlides data.",
-    type: "Implementation Guide",
+      "Hướng dẫn kỹ thuật thiết lập quy trình phân tích Engagement, Dashboard và báo cáo tự động sử dụng dữ liệu AhaSlides.",
+    type: "Hướng dẫn Triển khai",
     size: "3.5 MB",
   },
 ];
@@ -63,15 +63,15 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
           className="max-w-2xl mb-16"
         >
           <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Section 08 — Download Center
+            Phần 08 — Trung tâm Tải xuống
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            Take the{" "}
-            <span className="text-gradient">Evidence</span> With You
+            Mang{" "}
+            <span className="text-gradient">Dữ liệu</span> theo bạn
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Free, research-backed resources for HR and L&D leaders ready to
-            move beyond attendance metrics.
+            Tài nguyên miễn phí, có cơ sở nghiên cứu dành cho HR và L&D Leaders
+            sẵn sàng vượt ra ngoài số liệu điểm danh.
           </p>
         </motion.div>
 
@@ -131,7 +131,7 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
                   <div className="flex items-center gap-2">
                     <Download size={14} style={{ color }} />
                     <span className="text-sm font-semibold" style={{ color }}>
-                      Free Download
+                      Tải miễn phí
                     </span>
                   </div>
                   <ArrowRight
@@ -153,10 +153,10 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
         >
           <div>
             <p className="text-white font-bold text-xl mb-1">
-              Want everything in one place?
+              Muốn tất cả trong một nơi?
             </p>
             <p className="text-white/50 text-sm">
-              Download all three resources with a single form — plus get an invitation to our next live webinar.
+              Tải xuống cả ba tài nguyên với một biểu mẫu — và nhận lời mời tham gia webinar trực tiếp tiếp theo.
             </p>
           </div>
           <button
@@ -164,7 +164,7 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
             className="flex-shrink-0 flex items-center gap-2 bg-[#FF5CA8] text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-[#FF8BC2] transition-all shadow-[0_0_30px_rgba(255,92,168,0.4)] hover:-translate-y-0.5 whitespace-nowrap"
           >
             <Download size={16} />
-            Download Full Bundle
+            Tải xuống Trọn bộ
           </button>
         </motion.div>
       </div>
