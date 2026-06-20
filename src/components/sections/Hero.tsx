@@ -83,11 +83,11 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
             >
               Bạn đang đo lượt{" "}
-              <span className="text-[#FF5CA8]">điểm danh,</span>
+              <span className="text-[#FF5CA8]">Điểm danh.</span>
               <br />
-              không phải{" "}
+              Không phải{" "}
               <span className="relative inline-block">
-                <span className="text-gradient">mức độ tương tác.</span>
+                <span className="text-gradient">mức độ Tương tác.</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
