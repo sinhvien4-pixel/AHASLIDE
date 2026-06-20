@@ -87,7 +87,7 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               <br />
               Không phải{" "}
               <span className="relative inline-block">
-                <span className="text-gradient">mức độ Tương tác.</span>
+                <span className="text-gradient">mức độ Tương{" "}tác.</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
