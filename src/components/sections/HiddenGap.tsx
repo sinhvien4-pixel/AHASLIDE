@@ -65,9 +65,6 @@ export default function HiddenGap() {
           transition={{ duration: 0.7 }}
           className="max-w-3xl mb-16 md:mb-24"
         >
-          <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Phần 02 — Khoảng cách vô hình
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-6">
             Những con số bạn tin tưởng{" "}
             <span className="text-gradient">có thể đang</span> đánh lừa bạn

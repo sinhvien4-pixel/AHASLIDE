@@ -81,9 +81,6 @@ export default function ExpertValidation() {
           transition={{ duration: 0.7 }}
           className="max-w-2xl mb-16"
         >
-          <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Phần 06 — Chuyên gia xác nhận
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
             Ngành đang chuyển dịch{" "}
             <span className="text-gradient">vượt ra ngoài điểm danh</span>

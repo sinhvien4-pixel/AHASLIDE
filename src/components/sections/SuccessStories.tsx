@@ -90,9 +90,6 @@ export default function SuccessStories() {
           transition={{ duration: 0.7 }}
           className="max-w-2xl mb-16"
         >
-          <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Phần 07 — Câu chuyện thành công
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
             Từ Điểm danh Cao đến{" "}
             <span className="text-gradient">Kết quả Đo lường được</span>

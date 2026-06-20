@@ -62,9 +62,6 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
           transition={{ duration: 0.7 }}
           className="max-w-2xl mb-16"
         >
-          <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-            Phần 08 — Trung tâm Tải xuống
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
             Mang{" "}
             <span className="text-gradient">Dữ liệu</span> theo bạn

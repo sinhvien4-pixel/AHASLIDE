@@ -13,7 +13,7 @@ interface NavigationProps {
 const navLinks = [
   { label: "Dữ liệu chứng minh", href: "#knowledge-hub" },
   { label: "Phương pháp đo lường", href: "#engagement" },
-  { label: "ROI Demo Room", href: "#roi-demo" },
+  { label: "Trải nghiệm dữ liệu", href: "#roi-demo" },
   { label: "Câu chuyện thành công", href: "#success-stories" },
   { label: "Tài nguyên", href: "#downloads" },
 ];

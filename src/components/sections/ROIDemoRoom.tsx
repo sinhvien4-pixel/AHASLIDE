@@ -76,9 +76,6 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-xs font-semibold text-white/70 uppercase tracking-widest mb-5 block">
-              Phần 05 — ROI Demo Room
-            </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Xem Engagement{" "}
               <span className="text-white/80 italic">biến thành</span>{" "}

@@ -110,9 +110,6 @@ export default function KnowledgeHub({ isUnlocked, onUnlock }: KnowledgeHubProps
           className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16"
         >
           <div className="max-w-2xl">
-            <span className="text-xs font-semibold text-[#FF5CA8] uppercase tracking-widest mb-4 block">
-              Phần 03 — Knowledge Hub
-            </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
               Dữ liệu thay cho{" "}
               <span className="text-gradient">phỏng đoán</span>
