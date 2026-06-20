@@ -63,12 +63,12 @@ export default function DownloadCenter({ onDownload }: DownloadCenterProps) {
           className="max-w-2xl mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            Mang{" "}
-            <span className="text-gradient">Dữ liệu</span> theo bạn
+            Tài nguyên miễn phí{" "}
+            <span className="text-gradient">dành cho HR Leaders</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Tài nguyên miễn phí, có cơ sở nghiên cứu dành cho HR và L&D Leaders
-            sẵn sàng vượt ra ngoài số liệu điểm danh.
+            Báo cáo, khung thực hành và hướng dẫn chuyên sâu — được xây dựng riêng
+            cho HR và L&D Leaders cần vượt qua giới hạn của số liệu điểm danh.
           </p>
         </motion.div>
 

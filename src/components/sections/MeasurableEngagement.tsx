@@ -172,12 +172,12 @@ export default function MeasurableEngagement() {
           className="max-w-3xl mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            Đo lường{" "}
-            <span className="text-gradient">Engagement</span> là gì?
+            Cách biến tương tác thành{" "}
+            <span className="text-gradient">dữ liệu kinh doanh</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Phương pháp 5 bước chuyển hóa quan sát chủ quan thành dữ liệu kinh doanh khách quan,
-            có thể hành động ngay lập tức.
+            Quy trình 5 bước giúp HR và L&D Leaders chuyển hóa quan sát trực quan
+            thành dữ liệu có thể trình bày trước ban lãnh đạo.
           </p>
         </motion.div>
 

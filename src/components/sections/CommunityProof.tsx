@@ -88,12 +88,12 @@ export default function CommunityProof({ onJoin }: CommunityProofProps) {
         >
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-              Cuộc trò chuyện{" "}
-              <span className="text-gradient">đang diễn ra</span>
+              Điều các HR Leaders{" "}
+              <span className="text-gradient">đang chia sẻ</span>
             </h2>
             <p className="text-lg text-[#6B7280] leading-relaxed">
-              Các HR Leader và chuyên gia L&D đang chia sẻ những khám phá về Engagement
-              có thể đo lường trên các mạng chuyên nghiệp — và kết quả là không thể phủ nhận.
+              Các HR Leader và chuyên gia L&D đang chia sẻ những phát hiện thực tế
+              về tương tác có thể đo lường — và con số không nói dối.
             </p>
           </div>
 

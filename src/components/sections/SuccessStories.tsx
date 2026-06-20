@@ -91,12 +91,12 @@ export default function SuccessStories() {
           className="max-w-2xl mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            Từ Điểm danh Cao đến{" "}
-            <span className="text-gradient">Kết quả Đo lường được</span>
+            Từ số người tham dự đến{" "}
+            <span className="text-gradient">bằng chứng hiệu quả thực sự</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Các doanh nghiệp đã chuyển đổi từ theo dõi hiện diện sang trí tuệ Engagement —
-            và những gì họ khám phá ra.
+            Những doanh nghiệp đã chuyển từ đếm người tham gia sang đo hiệu quả thực sự —
+            và những gì họ phát hiện ra.
           </p>
         </motion.div>
 

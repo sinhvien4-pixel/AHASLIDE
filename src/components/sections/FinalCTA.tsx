@@ -52,8 +52,8 @@ export default function FinalCTA({ onBookDemo, onDownload }: FinalCTAProps) {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8"
         >
-          Biến Engagement{" "}
-          <span className="text-gradient">thành dữ liệu chứng minh</span>
+          Biến tương tác{" "}
+          <span className="text-gradient">thành bằng chứng ROI</span>
         </motion.h2>
 
         <motion.div

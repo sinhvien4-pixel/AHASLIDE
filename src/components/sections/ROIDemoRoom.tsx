@@ -77,9 +77,9 @@ export default function ROIDemoRoom({ onBookDemo }: ROIDemoRoomProps) {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Xem Engagement{" "}
-              <span className="text-white/80 italic">biến thành</span>{" "}
-              Dữ liệu
+              Xem dữ liệu thực{" "}
+              <span className="text-white/80 italic">từ chính</span>{" "}
+              ngành của bạn
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-10">
               Trải nghiệm cách AhaSlides chuyển hóa mọi tương tác thành thông tin kinh doanh có thể đo lường.

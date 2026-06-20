@@ -82,12 +82,12 @@ export default function ExpertValidation() {
           className="max-w-2xl mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1F1F] leading-tight mb-4">
-            Ngành đang chuyển dịch{" "}
-            <span className="text-gradient">vượt ra ngoài điểm danh</span>
+            Điểm danh{" "}
+            <span className="text-gradient">không còn là thước đo đủ tốt</span>
           </h2>
           <p className="text-lg text-[#6B7280] leading-relaxed">
-            Các chuyên gia dẫn đầu trong HR, L&D và phát triển tổ chức đều
-            thống nhất một điểm: số liệu hiện diện không còn đủ nữa.
+            Các chuyên gia hàng đầu trong HR, L&D và phát triển tổ chức đều
+            nhất trí: chỉ đo điểm danh là chưa đủ.
           </p>
         </motion.div>
 

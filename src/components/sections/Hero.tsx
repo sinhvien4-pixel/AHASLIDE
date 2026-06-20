@@ -82,12 +82,12 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6"
             >
-              Bạn đang đo{" "}
-              <span className="text-[#FF5CA8]">Điểm danh.</span>
+              Bạn đang đo lượt{" "}
+              <span className="text-[#FF5CA8]">điểm danh,</span>
               <br />
-              Không phải{" "}
+              không phải{" "}
               <span className="relative inline-block">
-                <span className="text-gradient">Engagement.</span>
+                <span className="text-gradient">mức độ tương tác.</span>
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
@@ -103,9 +103,9 @@ export default function Hero({ onExplore, onBookDemo }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg md:text-xl text-white/60 leading-relaxed mb-10 max-w-lg"
             >
-              Điểm danh cho bạn biết ai đến.{" "}
+              Điểm danh chỉ cho biết ai có mặt.{" "}
               <span className="text-white/85 font-medium">
-                Dữ liệu Engagement cho bạn biết ai thực sự tham gia, học được gì và đóng góp như thế nào.
+                Dữ liệu tương tác (Engagement) mới là thứ chứng minh họ thực sự lắng nghe, học hỏi và đóng góp.
               </span>
             </motion.p>
 
